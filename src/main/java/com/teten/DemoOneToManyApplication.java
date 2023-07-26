@@ -17,7 +17,7 @@ import com.teten.entity.BookCategory;
 import com.teten.repository.BookCategoryRepository;
 import com.teten.repository.BookRepository;
 
-import jakarta.transaction.Transactional;
+import javax.transaction.Transactional;
 
 @SpringBootApplication
 @EnableJpaRepositories

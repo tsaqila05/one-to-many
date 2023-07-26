@@ -29,13 +29,13 @@ public class Book{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private String Name;
+    private String name;
     @ManyToOne
     @JoinColumn(name = "book_category_id")
     private BookCategory bookCategory;
 
     public Book(String name, BookCategory bookCategory) {
-        this.Name = name;
+        this.name = name;
         this.bookCategory = bookCategory;
     }
 }
